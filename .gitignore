@@ -1,0 +1,20 @@
+# Visual Studio
+**/bin/
+**/obj/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Android Studio
+**/build/
+*.apk
+
+# Общие
+*.zip
+*.cache
+*.user
+*.iml
+*.json
+.DS_Store
+Thumbs.db
