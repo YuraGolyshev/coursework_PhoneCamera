@@ -1,0 +1,6 @@
+LIBRARY VirtualCamFilter
+EXPORTS
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
+    DllRegisterServer
+    DllUnregisterServer 

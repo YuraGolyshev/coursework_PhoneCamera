@@ -1,0 +1,75 @@
+<Window x:Class="CameraReceiver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CameraReceiver"
+        mc:Ignorable="d"
+        Title="Приемник камеры Android" Height="700" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Информационная панель -->
+        <Border Grid.Row="0" Background="#222222" Padding="10,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock x:Name="StatusText" Text="Ожидание подключения..." Foreground="White" VerticalAlignment="Center"/>
+                
+                <TextBlock x:Name="VCamStatusText" Grid.Column="1" Text="VCam: Не подключен" Foreground="#FFCC88" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        
+                <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock x:Name="FpsCounter" Text="0 FPS" Foreground="#AAFFAA" Margin="0,0,15,0" FontWeight="Bold"/>
+                    <TextBlock x:Name="ResolutionText" Text="0x0" Foreground="#AAAAFF" Margin="0,0,15,0" FontWeight="Bold"/>
+                    <TextBlock x:Name="DataRateText" Text="0 КБ/с" Foreground="#FFAAAA" FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Изображение -->
+        <Border Grid.Row="1" Background="#111111">
+            <Image x:Name="CameraImage" Stretch="Uniform" Margin="10"/>
+        </Border>
+        
+        <!-- Панель управления -->
+        <Border Grid.Row="2" Background="#333333" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Управление сервером -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="StartButton" Content="Запустить сервер" Padding="15,8" Margin="0,0,15,0" Click="StartButton_Click"/>
+                    <Button x:Name="StopButton" Content="Остановить сервер" Padding="15,8" Margin="0,0,15,0" Click="StopButton_Click" IsEnabled="False"/>
+                    <Button x:Name="QrButton" Content="QR" Padding="15,8" Click="QrButton_Click"/>
+                </StackPanel>
+                
+                <!-- Управление виртуальной камерой -->
+                <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center">
+                    <!-- Регистрация камеры -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,5">
+                        <Button x:Name="RegisterVCamButton" Content="Зарегистрировать камеру" Padding="10,5" Margin="0,0,5,0" Click="RegisterVCamButton_Click" Background="#4CAF50" Foreground="White"/>
+                        <Button x:Name="UnregisterVCamButton" Content="Удалить камеру" Padding="10,5" Margin="5,0,0,0" Click="UnregisterVCamButton_Click" Background="#F44336" Foreground="White"/>
+                    </StackPanel>
+                    
+                    <!-- Управление подключением -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <!--<Button x:Name="InitVCamButton" Content="🔧 Инициализировать VCam" Padding="10,5" Margin="0,0,5,0" Click="InitVCamButton_Click"/>-->
+                        <Button x:Name="StartVCamButton" Content= "Передать изображение на виртуальную камеру" Padding="10,5" Margin="5,0,5,0" Click="StartVCamButton_Click" IsEnabled="True"/>
+                        <!--<CheckBox x:Name="EnableVCamCheckBox" Content="Включить передачу" VerticalAlignment="Center" Foreground="White" Margin="10,0,0,0"/>-->
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window> 
