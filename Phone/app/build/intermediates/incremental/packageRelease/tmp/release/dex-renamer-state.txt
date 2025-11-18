@@ -1,0 +1,7 @@
+#Sun Jul 06 20:02:28 GMT+04:00 2025
+base.0=C\:\\cw\\Phone\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=C\:\\cw\\Phone\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

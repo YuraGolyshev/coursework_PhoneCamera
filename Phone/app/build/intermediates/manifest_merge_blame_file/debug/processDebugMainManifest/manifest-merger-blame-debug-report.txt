@@ -1,0 +1,244 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.phonecamera"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-feature
+11-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:5:5-84
+12        android:name="android.hardware.camera"
+12-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:5:19-57
+13        android:required="true" />
+13-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:5:58-81
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:6:5-65
+15-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:6:22-62
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:7:5-67
+16-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:7:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:8:5-79
+17-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:8:22-76
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:9:5-76
+18-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:9:22-73
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:10:5-68
+19-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:10:22-65
+20
+21    <permission
+21-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.phonecamera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.phonecamera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+26
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+28        android:name="android.hardware.camera.front"
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+29        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+30    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+32        android:name="android.hardware.camera.autofocus"
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+33        android:required="false" />
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+35        android:name="android.hardware.camera.flash"
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+38        android:name="android.hardware.screen.landscape"
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+40    <uses-feature
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+41        android:name="android.hardware.wifi"
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+42        android:required="false" />
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+43
+44    <application
+44-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:12:5-38:19
+45        android:allowBackup="true"
+45-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:13:9-35
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.13.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\ee81e9003baef06be7850ff4f00325b8\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+47        android:dataExtractionRules="@xml/data_extraction_rules"
+47-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:14:9-65
+48        android:debuggable="true"
+49        android:extractNativeLibs="false"
+50        android:fullBackupContent="@xml/backup_rules"
+50-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:15:9-54
+51        android:icon="@mipmap/ic_launcher"
+51-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:16:9-43
+52        android:label="@string/app_name"
+52-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:17:9-41
+53        android:roundIcon="@mipmap/ic_launcher_round"
+53-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:18:9-54
+54        android:supportsRtl="true"
+54-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:19:9-35
+55        android:theme="@style/Theme.PhoneCamera"
+55-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:20:9-49
+56        android:usesCleartextTraffic="true" >
+56-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:21:9-44
+57        <activity
+57-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:23:9-34:20
+58            android:name="com.example.phonecamera.MainActivity"
+58-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:24:13-41
+59            android:exported="true"
+59-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:25:13-36
+60            android:label="@string/app_name"
+60-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:27:13-45
+61            android:screenOrientation="portrait"
+61-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:26:13-49
+62            android:theme="@style/Theme.PhoneCamera" >
+62-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:28:13-53
+63            <intent-filter>
+63-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:29:13-33:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:30:17-69
+64-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:30:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:32:17-77
+66-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:32:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:35:9-37:56
+70            android:name="com.example.phonecamera.CapturePortrait"
+70-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:35:19-50
+71            android:screenOrientation="portrait"
+71-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:36:13-49
+72            android:theme="@style/zxing_CaptureTheme" />
+72-->C:\cwl\Phone\app\src\main\AndroidManifest.xml:37:13-54
+73
+74        <service
+74-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+75            android:name="androidx.camera.core.impl.MetadataHolderService"
+75-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+76            android:enabled="false"
+76-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+77            android:exported="false" >
+77-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+78            <meta-data
+78-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+79                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+79-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+80                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+80-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\761e3c8bde0ccb4cb503909a5bdf38d1\transformed\camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+81        </service>
+82
+83        <activity
+83-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\f38b5c402d23b30c2e2875c7c76f10e0\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+84            android:name="androidx.compose.ui.tooling.PreviewActivity"
+84-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\f38b5c402d23b30c2e2875c7c76f10e0\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+85            android:exported="true" />
+85-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\f38b5c402d23b30c2e2875c7c76f10e0\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+86        <activity
+86-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\bf0789ae4c448878dc74378ebdfb6958\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+87            android:name="androidx.activity.ComponentActivity"
+87-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\bf0789ae4c448878dc74378ebdfb6958\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+88            android:exported="true" />
+88-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\bf0789ae4c448878dc74378ebdfb6958\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+92            android:authorities="com.example.phonecamera.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\37f27ceb4a61ff296c8d63ebd994f71d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\371a901e1b62b689ce41179655425bd7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\371a901e1b62b689ce41179655425bd7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\371a901e1b62b689ce41179655425bd7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+100            <meta-data
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+102                android:value="androidx.startup" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+103        </provider>
+104
+105        <receiver
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+107            android:directBootAware="false"
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+108            android:enabled="true"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+109            android:exported="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+110            android:permission="android.permission.DUMP" >
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\5489a04eb87bf8bba9568350a1d1b87e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+122            </intent-filter>
+123        </receiver>
+124
+125        <activity
+125-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+126            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+126-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+127            android:clearTaskOnLaunch="true"
+127-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+128            android:screenOrientation="sensorLandscape"
+128-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+129            android:stateNotNeeded="true"
+129-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+130            android:theme="@style/zxing_CaptureTheme"
+130-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+131            android:windowSoftInputMode="stateAlwaysHidden" />
+131-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Юрий\.gradle\caches\8.11.1\transforms\1a4a5e6296b6a48edae4b3ea3d6a315a\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+132    </application>
+133
+134</manifest>
